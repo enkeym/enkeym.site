@@ -1,4 +1,4 @@
-const siteUrl = "https://enkeym.site"
+const siteUrl = "https://enkeym.store"
 
 export const portfolioJsonLd = {
   "@context": "https://schema.org",

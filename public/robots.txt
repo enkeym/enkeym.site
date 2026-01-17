@@ -4,5 +4,5 @@ Disallow: /404
 Disallow: /_not-found
 Disallow: /500
 
-Host: https://enkeym.site
-Sitemap: https://enkeym.site/sitemap.xml
+Host: https://enkeym.store
+Sitemap: https://enkeym.store/sitemap.xml

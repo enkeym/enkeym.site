@@ -4,6 +4,7 @@ import type { NextConfig } from "next"
 const isAnalyze = process.env.ANALYZE === "true"
 
 const baseConfig: NextConfig = {
+  output: "standalone",
   reactStrictMode: true,
   compress: true,
   images: {
@@ -11,7 +12,7 @@ const baseConfig: NextConfig = {
     remotePatterns: [
       {
         protocol: "https",
-        hostname: "enkeym.site",
+        hostname: "enkeym.store",
         pathname: "/images/**"
       }
     ]

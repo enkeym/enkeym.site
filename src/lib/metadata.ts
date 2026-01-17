@@ -1,6 +1,6 @@
 import type { Metadata } from "next"
 
-export const siteUrl = "https://enkeym.site"
+export const siteUrl = "https://enkeym.store"
 
 export interface SiteMetadata extends Metadata {
   keywords?: string[]

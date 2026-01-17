@@ -1,6 +1,6 @@
 /** @type {import('next-sitemap').IConfig} */
 module.exports = {
-  siteUrl: "https://enkeym.site",
+  siteUrl: "https://enkeym.store",
   generateRobotsTxt: true,
   generateIndexSitemap: true,
   outDir: "./out",
@@ -10,7 +10,7 @@ module.exports = {
   exclude: ["/500", "/preview", "/internal-test"],
   alternateRefs: [
     {
-      href: "https://enkeym.site",
+      href: "https://enkeym.store",
       hreflang: "ru"
     }
   ],
@@ -22,7 +22,7 @@ module.exports = {
         disallow: ["/500", "/preview", "/internal-test"]
       }
     ],
-    additionalSitemaps: ["https://enkeym.site/sitemap.xml"]
+    additionalSitemaps: ["https://enkeym.store/sitemap.xml"]
   },
   transform: async (config, path) => {
     if (
