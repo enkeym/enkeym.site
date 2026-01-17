@@ -7,13 +7,13 @@ up:
 	sudo $(DOCKER_COMPOSE) up -d 
 
 down:
-	sudo $(DOCKER_COMPOSE) dow
+	sudo $(DOCKER_COMPOSE) down
 
 build:
 	sudo $(DOCKER_COMPOSE) build 
 
 restart:
-	sudo $(DOCKER_COMPOSE) restar
+	sudo $(DOCKER_COMPOSE) restart
 
 logs:
 	sudo $(DOCKER_COMPOSE) logs -f $(s
@@ -23,7 +23,7 @@ ps:
 
 clean:
 	sudo $(DOCKER_COMPOSE) down --rmi all --volumes --remove-orphans
-	sudo docker system prune -
+	sudo docker system prune -f
 
 debug:
 	@echo "🔍 Проверка работы прокси (Nginx -> App):"
