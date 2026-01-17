@@ -38,6 +38,9 @@
 
 html {
   font-size: 100%;
+  scroll-snap-type: y mandatory;
+  scroll-behavior: smooth;
+  overflow-y: scroll;
 }
 
 body {
@@ -47,6 +50,9 @@ body {
     Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
   font-size: var(--font-body);
   min-height: 100vh;
+
+  scrollbar-width: none;
+  -ms-overflow-style: none;
 }
 
 a {
@@ -54,8 +60,21 @@ a {
   text-decoration: none;
 }
 
-/* snap scroll */
+body::-webkit-scrollbar {
+  display: none;
+}
+
 section {
   height: 100vh;
-  overflow: hidden;
+  scroll-snap-align: start;
+  /* overflow: hidden; */
+}
+
+* {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+*::-webkit-scrollbar {
+  display: none;
 }

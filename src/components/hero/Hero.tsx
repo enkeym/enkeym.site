@@ -42,7 +42,7 @@ const followVariants = {
 const platforms = [
   {
     name: "telegram",
-    href: "https://t.me/NikitaKorolev96"
+    href: "https://t.me/EdwardCallane"
   }
 ]
 
@@ -106,7 +106,7 @@ const Hero = () => {
             генерации текстов, улучшения дизайна и повышения производительности.
           </motion.p>
           <motion.div variants={awardVariants} className={styles.awardList}>
-            {["html", "css", "js", "ts", "react", "next", "gpt"].map(
+            {["html", "css", "js", "ts", "react", "next", "nest"].map(
               (src, i) => (
                 <motion.div key={i} variants={awardVariants}>
                   <Image
@@ -207,7 +207,7 @@ const Hero = () => {
         </motion.div>
 
         <Link
-          href="/#contact"
+          href="#contact"
           className={styles.contactLink}
           aria-label="Связаться со мной"
         >

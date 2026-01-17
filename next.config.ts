@@ -6,8 +6,6 @@ const isAnalyze = process.env.ANALYZE === "true"
 const baseConfig: NextConfig = {
   reactStrictMode: true,
   compress: true,
-  output: "export",
-  trailingSlash: true,
   images: {
     unoptimized: true,
     remotePatterns: [
