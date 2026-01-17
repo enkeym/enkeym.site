@@ -169,6 +169,8 @@ const Hero = () => {
               href={href}
               className={styles.followLink}
               aria-label={name}
+              target="_blank"
+              rel="noopener noreferrer"
             >
               <Image
                 src={`/${name}.svg`}
