@@ -16,11 +16,6 @@ const baseConfig: NextConfig = {
         pathname: "/images/**"
       }
     ]
-  },
-  modularizeImports: {
-    three: {
-      transform: "three/src/{{member}}"
-    }
   }
 }
 
