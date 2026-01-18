@@ -4,7 +4,7 @@
   "private": true,
   "scripts": {
     "dev": "next dev --turbopack",
-    "build": "next build && yarn postbuild && yarn postexport",
+    "build": "next build --turbopack && yarn postbuild && yarn postexport",
     "postbuild": "cross-env NODE_ENV=production next-sitemap",
     "export": "next export",
     "postexport": "cp -r public/. out/",
